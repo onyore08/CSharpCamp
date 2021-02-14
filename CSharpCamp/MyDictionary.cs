@@ -70,9 +70,9 @@ namespace CSharpCamp
                 return dictionaryResult;
             }
 
-            //Uygulama bu satıra ulaşmışsa key değeri daha önce kayıt edilmemiş demektir
-            //Bu durumda kayıt işlemine devam edilir
-            //key kaydı
+            // Uygulama bu satıra ulaşmışsa key değeri daha önce kayıt edilmemiş demektir
+            // Bu durumda kayıt işlemine devam edilir
+            // key kaydı
             TKey[] tempKeyArray = _keys;
             _keys = new TKey[_keys.Length + 1];
             for (int i = 0; i < tempKeyArray.Length; i++)

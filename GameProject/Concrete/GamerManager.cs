@@ -8,26 +8,23 @@ namespace GameProject.Concrete
 {
     class GamerManager : IGamerService
     {
-        IUserValidationService _userValidationService;
-        private UserValidationManager userValidationManager;
+        private IUserValidationService _userValidationService;
 
         public GamerManager(IUserValidationService userValidationService)
         {
             _userValidationService = userValidationService;
         }
 
-        public GamerManager(UserValidationManager userValidationManager)
-        {
-            this.userValidationManager = userValidationManager;
-        }
-
         public void Add(Gamer gamer)
         {
-            if (_userValidationService.Validate(gamer) == true)
+            try
             {
-                Console.WriteLine("Gamer Added");
+                if (_userValidationService.Validate(gamer) == true)
+                {
+                    Console.WriteLine("Gamer Added");
+                }
             }
-            else
+            catch (Exception)
             {
                 Console.WriteLine("There is a problem. Not added.");
             }

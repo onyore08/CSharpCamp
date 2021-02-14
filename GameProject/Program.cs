@@ -12,27 +12,27 @@ namespace GameProject
             Gamer gamer1 = new Gamer()
             {
                 Id = 1,
-                FirstName = "Can",
-                LastName = "Evcimen",
-                IdentityNumber = "123456",
-                BirthYear = 2001
+                FirstName = "Onur",
+                LastName = "Yıldız",
+                IdentityNumber = "68413561",
+                BirthYear = 1992
 
             };
             Gamer gamer2 = new Gamer()
             {
                 Id = 2,
-                FirstName = "Yahya",
-                LastName = "Nehir",
-                IdentityNumber = "12344",
-                BirthYear = 2000
+                FirstName = "Muharrem",
+                LastName = "Kehribar",
+                IdentityNumber = "56398635",
+                BirthYear = 1998
             };
             gamerManager.Add(gamer1);
-            Game game1 = new Game() { GameName = "CS:GO", GameId = 1, GamePrice = 30, Discount = 20 };
-            Game game2 = new Game() { GameName = "VALORANT", GameId = 2, GamePrice = 1, Discount = 99 };
-            Game game3 = new Game() { GameName = "LOL", GameId = 1, GamePrice = 10, Discount = 70 };
+            Game game1 = new Game() { GameName = "AGE OF 2", GameId = 1, GamePrice = 50, Discount = 15};
+            Game game2 = new Game() { GameName = "DESPERADOS 2", GameId = 2, GamePrice = 25, Discount = 10 };
+            Game game3 = new Game() { GameName = "THE GODFATHER", GameId = 3, GamePrice = 10, Discount = 3 };
 
-            Campaign campaign1 = new Campaign() { CampaingId = 1, CampaingName = "New Member Campaign", DiscountRate = 20 };
-            Campaign campaign2 = new Campaign() { CampaingId = 2, CampaingName = "First purchase campaign", DiscountRate = 15 };
+            Campaign campaign1 = new Campaign() { CampaingId = 1, CampaingName = "New Year Campaign", DiscountRate = 20 };
+            Campaign campaign2 = new Campaign() { CampaingId = 2, CampaingName = "Spring Campaign", DiscountRate = 15 };
 
             CampaignManager campaignManager = new CampaignManager();
             campaignManager.Add(campaign1);
